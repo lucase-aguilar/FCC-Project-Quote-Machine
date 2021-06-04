@@ -1,0 +1,15 @@
+body {
+  background-color: #5e6668;
+}
+
+.container {
+  margin-top: 25px;
+  background-color: #c1c8c7;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card {
+  background-color: #f6fafb;
+  border-radius: 5px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>X-Files Random Quote Machine</title>
+    <script src="index.js"></script>
+    
+    <!-- #Javascript enviado index.js
+
+       <script>
+      const QUOTEBANK = [
+        {
+          quote: "I'm old-school, Mulder. Pre-Google.",
+          author: "Danna Scully."
+      }, {
+          quote: "Mulder, the internet is not good for you",
+          author: "Dana Scully."
+      }, {
+          quote: "A mother never forgets.",
+          author: "Dana Scully."
+      }, {
+        quote: "It looks like this person was born without footprints. Which is impossible, by the way.",
+        author: "Dana Scully."
+      }, {
+        quote: "There’s a lot of money to be made in scaring people.",
+        author: "Dana Scully"
+      }, {
+        quote: "Sure. Fine. Whatever.",
+        author: "Dana Scully"
+      }, {
+        quote: "I know what I'm doing.",
+        author: "Fox Mulder."
+      }, {
+        quote: "Classic vampirism.",
+        author: "Fox Mulder."
+      }, {
+        quote: "I wouldn't want to dissapoint you by not dissapointing you.",
+        author: "Fox Mulder."
+      }, {
+        quote: "Do you believe in the existence of extraterrestrials?",
+        author: "Fox Mulder."
+      }, {
+        quote: "Are you aware of the statistics of decapitation?",
+        author: "Fox Mulder."
+      }, {
+        quote: "You gotta love this place. Everyday is like halloween.",
+        author: "Fox Mulder."
+      }
+
+      ];
+      window.onload = init;
+      function init() {
+        generateaQuote();
+        
+      }
+      function generateaQuote() {
+        let quoteSize = QUOTEBANK.length;
+        let randomIndex = Math.floor(Math.random() * quoteSize);
+        let randomQuoteData = QUOTEBANK[randomIndex];
+        let twitterLink = "https://twitter.com/intent/tweet?text="+randomQuoteData.quote+" - "+randomQuoteData.author;
+
+
+
+
+
+        document.getElementById("tweet-quote").href = twitterLink;
+        document.getElementById("text").innerText= randomQuoteData.quote;
+        document.getElementById("author").innerText= randomQuoteData.author;
+
+      };
+    </script>
+  
+  -->
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-6 offset-md-3">
+          <wrapper id="quote-box">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <div id="text"></div>
+                  </h5>
+                    <p class="card-text">
+                      <div id="author"></div>
+                    </p>
+                </div>
+                  <div class="card-footer text-muted font-weight-bold">
+                    The X-Files
+                  </div>
+                
+                  <button id="new-quote" onClick=generateaQuote(); class="btn btn-success btn-block">New quote</button>
+                  <a href="#" id="tweet-quote" target="_blank" class="btn btn-primary btn-block" >Tweet it!</a>
+                
+              </div>
+          </wrapper>
+        </div>
+      </div>  
+    </div>
+
+    <script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+  </body>
+</html>
